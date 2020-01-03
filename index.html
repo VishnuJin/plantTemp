@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="Stylesheet_leaf_new.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+
+  <body bgcolor="green">
+    <h2  style="color:aliceblue"  >Let's help in plant disease analysis</h2>
+   <h3> <a href="#ref1">
+     <i style='font-size:50px'   class='fas'  style="color:aliceblue">&#xf0ab;</i></a>
+    </h3>
+   
+    <div class="navi">
+      <div>
+        <div style="color:aliceblue" id="left_nav"> Plant diseases Predictor</div>
+      </div>
+      <div>
+          <a href="#ref1"  id="rightnav1" style="color:aliceblue" >Upload</a>
+      </div>
+      <div>
+      <a href="#ref"  id="rightnva2" style="color:aliceblue">How does it work</a>
+    </div>
+
+    </div>
+
+
+    <div class="column">
+      <img src="index1.jpg"  style="height: 90%;width:100%" />
+    </div>
+    <input id="background_input" type="file" />
+    <p>
+      <input
+        type="file"
+        accept="image/*"
+        name="image"
+        id="file"
+        onchange="loadFile(event)"
+        style="display: none;"
+      />
+    </p>
+    
+    <!-- <div id="result"></div> -->
+     <!-- <input 
+      name="Submit"
+      type="submit"
+      value="Submit"
+      class="submit_button"
+      onclick="myFunction()"
+   > -->
+   
+    <div class="para" style="color:ivory">
+      <p id="ref" style="font-size:25px">This explains how it works</p>
+      <br />
+      Take a snapshot of the diseased spot of the leaf in plant body.Upload the
+      image in the link below. The application helps in identifying the disease
+      affected abd its severity.Also the remedial solution will by analysing the
+      damaged part of the body.
+    </div>
+
+    <!-- <div class="fas1">
+      <div>
+        <span><i style="font-size:40px" id="s1" class="fas">&#xf3cd;</i></span>
+      </div>
+      <div>
+        <span><i style="font-size:40px" id="s2" class="fas">&#xf013;</i></span>
+      </div>
+      <div>
+        <span><i style="font-size:40px" id="s3" class="fas">&#xf15b;</i></span>
+      </div>
+    </div> -->
+  
+
+
+    <div class="container">
+      <div id="leftbox" style="color:ivory">
+        <span><i style="font-size:40px" id="s1" class="fas">&#xf3cd;</i></span>
+        <br /><br />
+        Take the picture of your plant.For best result try to focus on one major
+        area of disease(Ex:Front side)capture the diseased spot in the picture
+        <br />
+
+      </div>
+
+      <div id="middlebox" style="color:ivory">
+        <span><i style="font-size:40px" id="s2" class="fas">&#xf013;</i></span>
+        <br /><br />
+        Convolutional neutral networks is built and the classification
+        algorithms will analyse the disease affected in the spot leaves
+        <br />
+      </div>
+
+      <div id="rightbox" style="color:ivory">
+        <span><i style="font-size:40px" id="s3" class="fas">&#xf15b;</i></span>
+        <br />
+        <br />
+        Results can be used to analyse the cause of the disease and its severity
+        and remedies can be shared by the experties and provide the remedies
+        <br />
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="imageupload">
+      <div id="upload_button">
+        <label for="file" style="cursor: pointer;" id="ref1">Upload Image</label>
+      </div>
+      <div id="uploadbutton_image">
+        <p><img id="output" width="200" height="200" /></p>
+      </div>
+  </div>
+
+
+
+    <script src="javascript_leaf.js"></script>
+  </body>
+
+
+</html>
